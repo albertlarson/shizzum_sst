@@ -1,0 +1,23 @@
+<VRTDataset rasterXSize="10130" rasterYSize="12685">
+  <SRS dataAxisToSRSAxisMapping="2,1">GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform> -8.2072227659999996e+01,  2.0000000000000001e-04,  0.0000000000000000e+00,  3.2930360899999997e+01,  0.0000000000000000e+00, -2.0000000000000001e-04</GeoTransform>
+  <Metadata>
+    <MDI key="AREA_OR_POINT">Area</MDI>
+  </Metadata>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="INTERLEAVE">BAND</MDI>
+  </Metadata>
+  <VRTRasterBand dataType="Byte" band="1" blockYSize="1">
+    <NoDataValue>0</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">output_data_normalized.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="10130" RasterYSize="12685" DataType="Float32" BlockXSize="10130" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="10130" ySize="12685" />
+      <DstRect xOff="0" yOff="0" xSize="10130" ySize="12685" />
+      <ScaleOffset>-17.3437</ScaleOffset>
+      <ScaleRatio>273.343</ScaleRatio>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>

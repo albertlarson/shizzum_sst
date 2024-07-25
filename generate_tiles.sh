@@ -8,6 +8,6 @@ OUTPUT_DIR="shizz_norm_tiles"
 gdal_translate -of VRT -ot Byte -scale -a_nodata 0 $INPUT_TIF $TEMP_VRT
 
 # Generate tiles
-docker run --rm -it -v "$(pwd)":/data ghcr.io/osgeo/gdal:alpine-normal-latest gdal2tiles.py --processes=4 /data/$TEMP_VRT /data/$OUTPUT_DIR
+docker run --rm -it -v "$(pwd)":/data ghcr.io/osgeo/gdal:alpine-normal-latest gdal2tiles.py --processes=4 --xyz /data/$TEMP_VRT /data/$OUTPUT_DIR
 
 echo "Tiles generated and saved in the directory: $OUTPUT_DIR"
